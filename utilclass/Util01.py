@@ -32,3 +32,30 @@ def convert_case_of_string(str2):
 # Method to find the index of string
 def to_find_index(str3, word):
     print(str3.find(word))
+
+
+# Method to convert String to Number
+def convert_to_digit(str1):
+    print(type(str1))
+    num = int(str1) + 45
+    print(type(num))
+
+
+# Method to find duplicate no. of char in string
+def duplicate_char(str1):
+    for i in range(0, len(str1)):
+        count = 1
+        for j in range(i+1, len(str1)):
+            if str1[i] == str1[j]:
+                count = count + 1
+                str1 = str1[:j] + '0' + str1[j+1:]
+
+        if count > 1 and str1[i] != '0':
+            print('{} and {}'.format(str1[i] + " duplicate times is : ", count))
+
+
+
+
+
+
+
