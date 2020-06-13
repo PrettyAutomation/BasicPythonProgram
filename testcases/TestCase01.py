@@ -14,3 +14,9 @@ class TestCase01:
     print(convert_case_of_string("pretty"))
 
     print(to_find_index('On the other hand, you have different fingers.', 'hand'))
+
+    convert_to_digit("56")
+
+    duplicate_char('I am learning java')
+
+
