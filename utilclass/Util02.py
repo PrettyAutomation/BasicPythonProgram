@@ -22,7 +22,6 @@ def partition(array, start, end):
     return high
 
 
-# Quick sorting for array taking arguments from the terminal
 def quick_sorting(array, start, end):
     if start >= end:
         return
@@ -30,6 +29,66 @@ def quick_sorting(array, start, end):
     p = partition(array, start, end)
     quick_sorting(array, start, p-1)
     quick_sorting(array, p+1, end)
+
+
+def bubble_sorting(arr):
+    if len(arr) == 0:
+        print('array is empty')
+    else:
+        for i in range(len(arr)):
+            for j in range(len(arr)-1):
+                if arr[j] < arr[j+1]:
+                    temp = arr[j]
+                    arr[j] = arr[j+1]
+                    arr[j+1] = temp
+                else:
+                    continue
+
+
+def print_fibonacci_series(n):
+    n1 = 0
+    n2 = 1
+    for i in range(n):
+        print('{}{}'.format(n1, " "))
+        sum01 = n1 + n2
+        n1 = n2
+        n2 = sum01
+
+
+def print_factorial(n):
+    n1 = 1;
+    for i in range(1, n + 1):
+        n1 = n1 * i
+    return n1
+
+
+def check_prime_number(n):
+    count = 0
+    for i in range(2, n):
+        if n % i != 0:
+            pass
+        else:
+            count = count + 1
+    if count > 1:
+        print('no is not prime')
+    else:
+        print('no is prime')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
