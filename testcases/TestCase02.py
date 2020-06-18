@@ -39,6 +39,35 @@ class TestCase02:
     n1 = int(input('enter the element to check prime'))
     check_prime_number(n1)
 
+# Method to find the maximum and minimum no. present in array
+    list1 = [2, 4, 7, 1, 89, 23, 12, 10]
+    arr01 = array('i', [2, 4, 7, 0, 100, 23, 12, 10])
+    find_max_elem(list1)
+    find_max_elem(arr01)
+
+# Method to use the generator
+    dict01 = {"java": 'language', 'indore': 'city', 'banana': 'fruit'}
+    output1 = new(dict01)
+    print(output1)
+    print(next(output1))
+    print(next(output1))
+    print(next(output1))
+    # print(next(output1))
+
+    output2 = my_func(6)
+    print(output2)
+    print(next(output2))
+    print(next(output2))
+    # print(next(output2))
+
+    output3 = my_func01(5)
+    print(output3)
+    print(next(output3))
+    print(next(output3))
+    print(next(output3))
+
+
+
 
 
 

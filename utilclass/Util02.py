@@ -75,6 +75,28 @@ def check_prime_number(n):
         print('no is prime')
 
 
+def find_max_elem(arr):
+    print(max(arr))
+    print(min(arr))
+
+
+def new(dict01):
+    for x, y in dict01.items():
+        yield x, y
+
+
+def my_func(n):
+    while n <= 7:
+        yield n
+        n += 1
+
+
+def my_func01(n):
+    yield n*1
+    yield n*2
+
+
+
 
 
 
