@@ -36,3 +36,76 @@ by your function, but actually, that variable is an integer.
 2) // floor division (discard the remainder)
 3) x is y, here is results is 1 if id(x) equals id(y).
 4) x is not y, here is not results in 1 if id(x) is not equal to id(y).
+
+### what are the immutable and mutable objects
+1) list - mutable
+2) tuple - immutable
+3) dict - mutable
+4) set - mutable
+5) string - immutable
+
+### what is shallow copy and deep copy
+
+1) we can not copy an object using = assignment operator because if we do so
+and make any changes in new object it will also change the original object
+
+2) shallow copy creates copy of object and reference of each element of the object
+
+            old_list = [1, 2, 3, 4, [2,3]]
+            new_list = copy.copy(old_list)
+            new_list[4][1] = 'b'
+            
+            print(old_list) :  [1, 2, 3, 4, [2, 'b']]
+            print(new_list) :  [1, 2, 3, 4, [2, 'b']]
+                            
+3) deep copy creates copy of object and elements of the object      
+            
+            old_list = [1, 2, 3, 4, [2,3]]
+            new_list = copy.deepcopy(old_list)
+            new_list[4][1] = 'b'
+            
+            print(old_list) :  [1, 2, 3, 4, [2, 3]]
+            print(new_list) :  [1, 2, 3, 4, [2, 'b']]
+            
+### how to run the commands using python
+
+1) by using os module
+
+         import os
+         os.system('ls -l)
+         it will print the command output
+         
+2) to save the command output in variable
+
+            import os
+            stream = os.popen('pwd')
+            output = stream.read() or stream.readlines()
+            print(output)       
+            
+### what is decorators 
+
+Decorators in Python are essentially functions that add functionality 
+to an existing function in Python without changing the structure of the function itself. 
+They are represented by the @decorator_name in Python and are called in bottom-up fashion   
+
+### Three types of error that might be contained in a Python program are 
+syntax, logic and run-time 
+
+### function in Python to open a file in read or write mode.     
+
+            open () 
+            
+            “ r “, for reading.
+            “ w “, for writing.
+            “ a “, for appending.
+            “ r+ “, for both reading and writing 
+            
+       
+            # a file named "geek", will be opened with the reading mode. 
+            file = open('geek.txt', 'r') 
+            # This will print every line one by one in the file 
+            for each in file: 
+                print (each)  
+                
+                
+                
